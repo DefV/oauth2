@@ -36,7 +36,7 @@ module OAuth2
       def access_token_params(code, options = {}) #:nodoc:
         super(options).merge({
           'type' => 'web_server',
-          'grant_type' => 'authorization_code'
+          'grant_type' => 'authorization_code',
           'code' => code
         })
       end
